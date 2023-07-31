@@ -1,0 +1,75 @@
+header {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  height: 100svh;
+  width: 100svw;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+header p {
+  text-transform: uppercase;
+  font-family: "Archivo Black", "Archivo", sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+.title {
+  margin-top: 0;
+  font-size: calc(16px + 5.5svw);
+  justify-self: center;
+  --shadow-color: #ff9e9e;
+  --shadow-color-light: #ffffff;
+}
+
+.title-s {
+  margin-bottom: 0;
+  font-size: calc(16px + 0.5svw);
+  letter-spacing: 3px;
+  --shadow-color: #ff9e9e;
+  --shadow-color-light: #ffffff;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 8svw;
+  padding-left: 5svw;
+}
+
+nav ul a {
+  text-align: left;
+  text-decoration: none;
+  font-size: calc(16px + 0.5svw);
+  font-family: "Archivo", sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+  --shadow-color: #ffffff;
+  --shadow-color-light: #ffffff;
+}
+
+main {
+  margin-left: auto;
+  margin-right: 6svw;
+}
+
+main ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10svw;
+  padding-right: 2svw;
+}
+main ul svg {
+  color: white;
+  --shadow-color: #ffffff;
+  --shadow-color-light: #ffffff;
+}

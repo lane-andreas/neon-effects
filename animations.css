@@ -1,0 +1,160 @@
+
+.s1 {
+  animation: flicker 9s infinite alternate;
+}
+.s2 {
+  animation: flicker 7s infinite alternate;
+}
+.s3 {
+  animation: flicker 4s infinite alternate;
+}
+.s4 {
+  animation: flicker 10s infinite alternate;
+}
+
+.title {
+  animation: pulsateheader 4.2s infinite alternate;
+}
+
+.title-s {
+  animation: pulsateheader 6s infinite alternate;
+}
+
+nav a:nth-child(1) {
+  animation: pulsatenav 2s infinite alternate;
+}
+
+nav a:nth-child(2) {
+  animation: pulsatenav 2.3s infinite alternate;
+}
+
+nav a:nth-child(3) {
+  animation: pulsatenav 15s infinite alternate;
+}
+
+.insta {
+  animation: pulsatemain 7.8s infinite alternate;
+}
+
+.linkedin {
+  animation: pulsatemain 9.2s infinite alternate;
+}
+
+.github {
+  animation: pulsatemain 3s infinite alternate, flicker 14s infinite alternate;
+}
+
+@keyframes pulsatemain {
+  100% {
+    -webkit-filter: drop-shadow(-1px 1px 1px var(--shadow-color-light))
+      drop-shadow(1px 1px 1px var(--shadow-color-light))
+      drop-shadow(0 0 10px var(--shadow-color-light))
+      drop-shadow(0 0 30px var(--shadow-color))
+      drop-shadow(0 0 50px var(--shadow-color))
+      drop-shadow(0 0 100px var(--shadow-color));
+    filter: drop-shadow(-1px 1px 1px var(--shadow-color-light))
+      drop-shadow(1px 1px 1px var(--shadow-color-light))
+      drop-shadow(0 0 10px var(--shadow-color-light))
+      drop-shadow(0 0 30px var(--shadow-color))
+      drop-shadow(0 0 50px var(--shadow-color))
+      drop-shadow(0 0 100px var(--shadow-color));
+  }
+
+  0% {
+    -webkit-filter: drop-shadow(-1px 1px 1px var(--shadow-color-light))
+      drop-shadow(1px 1px 1px var(--shadow-color-light))
+      drop-shadow(0 0 4px var(--shadow-color-light))
+      drop-shadow(0 0 14px var(--shadow-color))
+      drop-shadow(0 0 25px var(--shadow-color))
+      drop-shadow(0 0 40px var(--shadow-color));
+    filter: drop-shadow(-1px 1px 1px var(--shadow-color-light))
+      drop-shadow(1px 1px 1px var(--shadow-color-light))
+      drop-shadow(0 0 4px var(--shadow-color-light))
+      drop-shadow(0 0 14px var(--shadow-color))
+      drop-shadow(0 0 25px var(--shadow-color))
+      drop-shadow(0 0 40px var(--shadow-color));
+  }
+}
+
+@keyframes pulsatenav {
+  100% {
+    -webkit-filter: drop-shadow(0 0 4px var(--shadow-color-light))
+      drop-shadow(0 0 11px var(--shadow-color-light))
+      drop-shadow(0 0 19px var(--shadow-color-light))
+      drop-shadow(0 0 40px var(--shadow-color))
+      drop-shadow(0 0 80px var(--shadow-color));
+    filter: drop-shadow(0 0 4px var(--shadow-color-light))
+      drop-shadow(0 0 11px var(--shadow-color-light))
+      drop-shadow(0 0 19px var(--shadow-color-light))
+      drop-shadow(0 0 40px var(--shadow-color))
+      drop-shadow(0 0 80px var(--shadow-color));
+  }
+
+  0% {
+    -webkit-filter: drop-shadow(0 0 2px var(--shadow-color-light))
+      drop-shadow(0 0 4px var(--shadow-color-light))
+      drop-shadow(0 0 6px var(--shadow-color-light))
+      drop-shadow(0 0 10px var(--shadow-color))
+      drop-shadow(0 0 45px var(--shadow-color));
+    filter: drop-shadow(0 0 2px var(--shadow-color-light))
+      drop-shadow(0 0 4px var(--shadow-color-light))
+      drop-shadow(0 0 6px var(--shadow-color-light))
+      drop-shadow(0 0 10px var(--shadow-color))
+      drop-shadow(0 0 45px var(--shadow-color));
+  }
+}
+
+@keyframes pulsateheader {
+  100% {
+    -webkit-filter: drop-shadow(0 0 4px var(--shadow-color-light))
+      drop-shadow(0 0 11px var(--shadow-color-light))
+      drop-shadow(0 0 19px var(--shadow-color-light))
+      drop-shadow(0 0 40px var(--shadow-color))
+      drop-shadow(0 0 80px var(--shadow-color));
+    filter: drop-shadow(0 0 4px var(--shadow-color-light))
+      drop-shadow(0 0 11px var(--shadow-color-light))
+      drop-shadow(0 0 19px var(--shadow-color-light))
+      drop-shadow(0 0 40px var(--shadow-color))
+      drop-shadow(0 0 80px var(--shadow-color));
+  }
+
+  0% {
+    -webkit-filter: drop-shadow(0 0 2px var(--shadow-color-light))
+      drop-shadow(0 0 4px var(--shadow-color-light))
+      drop-shadow(0 0 6px var(--shadow-color-light))
+      drop-shadow(0 0 10px var(--shadow-color))
+      drop-shadow(0 0 45px var(--shadow-color));
+    filter: drop-shadow(0 0 2px var(--shadow-color-light))
+      drop-shadow(0 0 4px var(--shadow-color-light))
+      drop-shadow(0 0 6px var(--shadow-color-light))
+      drop-shadow(0 0 10px var(--shadow-color))
+      drop-shadow(0 0 45px var(--shadow-color));
+  }
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  26%,
+  53%,
+  57%,
+  100% {
+  }
+  20%,
+  25%,
+  55% {
+    visibility: hidden;
+    /* opacity: 3%; */
+  }
+}
+
+nav a:hover,
+main ul svg:hover {
+  --shadow-color: #ff9e9e;
+}
+
+nav a:active,
+main ul svg:active {
+  --shadow-color: rgb(0, 0, 0);
+}
